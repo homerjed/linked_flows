@@ -19,13 +19,6 @@ source .venv/bin/activate
 
 Runtime dependencies are pinned in `requirements.txt`. Setup also installs Ruff from `requirements-dev.txt`. Run the commands below from this directory. Set `JAX_PLATFORMS=cpu` to select CPU execution.
 
-## Formatting
-
-```bash
-.venv/bin/ruff format .          # format Python code
-.venv/bin/ruff format --check .  # check without changing files
-```
-
 ## Experiments
 
 ```bash
