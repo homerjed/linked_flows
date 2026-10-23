@@ -6,8 +6,7 @@
   </a>
 </p>
 
-A small standalone version of the `linked_flow` experiments, following
-`code_plan.md`. JAX, Equinox and Optax; exact SciPy pairing; no native build.
+Code for `linked_flow` experiments. Built with `jax`, `equinox` and `optax` using exact `scipy` pairing.
 
 ## Setup
 
