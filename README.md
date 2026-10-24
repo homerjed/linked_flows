@@ -14,7 +14,7 @@ source .venv/bin/activate
 # For NVIDIA CUDA 12 instead: bash setup.sh cuda12
 ```
 
-Runtime dependencies are pinned in `requirements.txt`. Setup also installs Ruff from `requirements-dev.txt`. Run the commands below from this directory. Set `JAX_PLATFORMS=cpu` to select CPU execution.
+Runtime dependencies are pinned in `requirements.txt`. Setup also installs Ruff from `requirements-dev.txt`. Set `JAX_PLATFORMS=cpu` to select CPU execution.
 
 ## Experiments
 
@@ -69,8 +69,3 @@ scripts/   dataset runners and a shared toy training loop
 plots/     dataset plots and plotting entry points
 bash/      dataset launchers
 ```
-
-Runs save configuration, losses, generated/reference samples, distribution metrics, final `.eqx` weights, and plots under `runs/`. Toy paths include the dataset, dimension, and seed; select a fresh `--output` for a different recipe. MNIST accepts `--out` for an exact output path. Existing runs are not overwritten. Regenerate plots with `python -m plots.1d.plot RUN_DIRECTORY` (also `2d` or `nd`), or `python -m plots.mnist RUN_DIRECTORY`. MNIST downloads four checksum-checked gzip files into `data/mnist/cache/` on first use. Data, environments, and generated outputs are excluded from version control.
-
-<!-- Training retains the final fixed-budget checkpoint. There are no notebooks, -->
-resume/early-stopping machinery, report pipelines, CIFAR-10, MPPCA, or test files.
