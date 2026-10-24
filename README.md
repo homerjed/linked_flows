@@ -1,9 +1,7 @@
 <h1 align="center">Linked Flows</h1>
 
 <p align="center">
-  <a href="assets/fm_and_linked_flow_x_to_y.pdf">
-    <img src="assets/fm_and_linked_flow_x_to_y.png" alt="Flow matching and linked flow from x to y" width="700">
-  </a>
+    <img src="assets/fm_and_linked_flow_x_to_y.svg" alt="Flow matching and linked flow from x to y" width="700">
 </p>
 
 Code for `linked_flow` experiments. Built with `jax`, `equinox` and `optax` using exact `scipy` pairing.
