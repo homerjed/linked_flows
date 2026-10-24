@@ -56,7 +56,7 @@ python -m scripts.nd.run --datasets gaussian --gaussian-kind ar1 \
   --dimension 32 --n-train 5000 --width 256 --methods lf fm
 ```
 
-Small Bash launchers in `bash/` group runs by dataset. They run locally and sequentially; there is no cluster submission layer.
+Bash launchers in `bash/` group runs by dataset. They run locally and sequentially (there is no layer for cluster submissions).
 
 ## Files
 
