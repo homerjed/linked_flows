@@ -31,7 +31,11 @@ python -m scripts.mnist.run --profile smoke
 | `nd` | Correlated Gaussian, coupled banana mixture, five-mode Gaussian mixture; configurable dimension |
 | `mnist` | Unconditional/conditional U-Net, fixed/repaired LF, random-pair LF, independent FM |
 
-Toy methods are `lf_unpaired`, `lf`, `fm`, `fm_paired`, `lsd`, `psd`, `esd`. The first four run by default (the rest are for flow maps). LF regresses endpoints, FM redraws endpoint (i.e. $t=0$) indices each update (i.e. a conventional FM setup) and paired FM uses the fixed exact assignment. FM saves Heun samples and an additional one-step Euler diagnostic (for comparison with LF) from the same trained velocity. LSD/PSD/ESD use the original stopped-teacher objectives. `--coupling` selects their endpoint coupling, FM coupling is selected explicitly with the method name `fm` or `fm_paired`.
+Toy methods are `lf_unpaired`, `lf`, `fm`, `fm_paired`, `lsd`, `psd`, `esd`. The first four run by default (the rest are for flow maps). 
+- LF regresses endpoints, FM redraws endpoint (i.e. $t=0$) indices each update (i.e. a conventional FM setup) and paired FM uses the fixed exact assignment. 
+- FM saves Heun samples and an additional one-step Euler diagnostic (for comparison with LF) from the same trained velocity. 
+- For the flow maps: LSD/PSD/ESD use the original stopped-teacher objectives. 
+- `--coupling` selects their endpoint coupling, FM coupling is selected explicitly with the method name `fm` or `fm_paired`.
 
 ```bash
 # One-step flow-map comparison, with the source's L1 LF baseline.
