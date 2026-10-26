@@ -60,7 +60,7 @@ Bash launchers in `bash/` group runs by dataset (e.g. 1D, 2D, ... with the chose
 ## Files
 
 ```text
-models/    MLP and MNIST U-Net
+models/    MLP and U-Net
 lf/        exact pairing and endpoint regression
 fm/        straight-path velocity loss and Heun/Euler sampling
 fmap/      LSD, PSD, ESD and one-step sampling
