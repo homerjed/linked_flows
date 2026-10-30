@@ -15,6 +15,10 @@ source .venv/bin/activate # For NVIDIA CUDA 12 instead: bash setup.sh cuda12
 
 Runtime dependencies are pinned in `requirements.txt`. Set `JAX_PLATFORMS=cpu` to select CPU execution.
 
+## Quickstart
+
+Check `notebooks/` for an ultra-quick example.
+
 ## Experiments
 
 ```bash

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+runs/
+data/mnist/cache/
+.cache/
+.ruff_cache/
