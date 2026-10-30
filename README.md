@@ -74,3 +74,17 @@ scripts/   dataset runners and a shared toy training loop
 plots/     dataset plots and plotting entry points
 bash/      dataset launchers
 ```
+
+## Citation 
+
+```bibtex
+@misc{linkedflows,
+      title={Linked Flows -- accelerating flow matching using instantaneous transformations}, 
+      author={Jed Homer and Nils Sch\"oneberg},
+      year={2026},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.IM},
+      url={}, 
+}
+```
